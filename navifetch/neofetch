@@ -5371,7 +5371,7 @@ get_distro_ascii() {
         "ArchMerge"*)
             set_colors 6 6 7 1
         ;;
-        
+
         "Arch"*)
             set_colors 6 6 7 1
         ;;
@@ -6234,31 +6234,31 @@ get_distro_ascii() {
             esac
         ;;
     esac
-    
+
     read -rd '' ascii_data <<'EOF'
-${c1}                        ;dl.                       
-                        .;,.                       
-                                                   
-           ..      .';clooolc;'.       '.          
-        ,oxdo'  .:xOkdollclloddxo:.   dkkd:.       
-     .lxdc,.. .lkko:..       .'coddl.  .,cool,     
-   'dxl,.    ,kkl,.             .:ddl;     'ldo;   
- .dko,      ,kxl.     .;llc;.     ,ddl,      'odo, 
+${c1}                        ;dl.
+                        .;,.
+
+           ..      .';clooolc;'.       '.
+        ,oxdo'  .:xOkdollclloddxo:.   dkkd:.
+     .lxdc,.. .lkko:..       .'coddl.  .,cool,
+   'dxl,.    ,kkl,.             .:ddl;     'ldo;
+ .dko,      ,kxl.     .;llc;.     ,ddl,      'odo,
 ;Okl.       xko,     o000Okxo:.    :xd:.      .oxo;
 dkd:       .kxl'    :OOOkxdoc;'    .xdc.       cxl,
 .odl,      .xxo,    ..dddolcl;'    ,kd:.      'xl,.
-  ,loc.     cxdl.    .,;doc..     .xxl,     .odc.  
-    ,loo:.   lddl,               ,kko:.  .:ddc'    
-      .:lol;. ,lodo;.         .:xkdc,. ,lol;.      
- 'do;    .',.   'coddo:.   .dOOxl,.   .,,.    ;c;. 
-  ''.             .,ooc,   cOkl'              ';'  
-                    'c:'   ;dc'                    
-                    .c;.   'l;.                    
-                    'c'.   .c,.                    
-          cl:.      :;..   .:,.      .::'          
-          .'''.....,'.      ..... ..,,..           
-              .....             ...                
-                                                   
+  ,loc.     cxdl.    .,;doc..     .xxl,     .odc.
+    ,loo:.   lddl,               ,kko:.  .:ddc'
+      .:lol;. ,lodo;.         .:xkdc,. ,lol;.
+ 'do;    .',.   'coddo:.   .dOOxl,.   .,,.    ;c;.
+  ''.             .,ooc,   cOkl'              ';'
+                    'c:'   ;dc'
+                    .c;.   'l;.
+                    'c'.   .c,.
+          cl:.      :;..   .:,.      .::'
+          .'''.....,'.      ..... ..,,..
+              .....             ...
+
 EOF
 
     # Overwrite distro colors if '$ascii_colors' doesn't
@@ -6296,6 +6296,7 @@ main() {
     image_backend
     get_cache_dir
     old_functions
+    distro="NAVI_OS x86_64"
     print_info
     dynamic_prompt
 
